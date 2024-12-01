@@ -1,10 +1,10 @@
+use num::{Bounded, Integer};
+
 fn custom_wrapping_add(a: u8, b: u8) -> u8 {
     const MAX: u8 = u8::MAX;
     let sum = (a as u16) + (b as u16);
     (sum % (MAX as u16 + 1)) as u8 //e.g. sum = to 300, 300 mod (255 + 1) = 44
 }
-
-use num::{Bounded, Integer};
 
 fn gen_custom_wrapping_add<T>(a: T, b: T) -> T
 where

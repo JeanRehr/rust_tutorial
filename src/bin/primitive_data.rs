@@ -88,3 +88,7 @@ allowing for efficiency, safety, and expressive code.
 The Rust standard library builds upon these primitive types to offer more
 complex data structures and functionality.
 */
+
+fn main() {
+    
+}
